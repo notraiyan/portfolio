@@ -1,26 +1,28 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+:root {
+    --clr-bg-dark: #1f2937; /* gray-800 */
+    --clr-bg-light: #e2e8f0; /* slate-200 */
+  
+    --clr-text-dark: #e2e8f0; /* slate-200 */
+    --clr-text-light: #1e293b; /* slate-800 */
   }
-  body {
-    color: white;
-    background: black;
+  
+  .dark {
+    background-color: var(--clr-bg-dark);
+    color: var(--clr-text-dark);
+    border-color: var(--clr-text-dark);
   }
-}
+  
+  .light {
+    background-color: var(--clr-bg-light);
+    color: var(--clr-text-light);
+    border-color: var(--clr-text-light);
+  }
+
+  @font-face {
+    font-family: "burtons";
+    src: url("../public/Burtons.otf");
+  }
