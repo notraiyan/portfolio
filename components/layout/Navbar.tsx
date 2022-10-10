@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { BsMoonStarsFill } from "react-icons/bs";
 
 interface NavProps {
@@ -6,7 +7,14 @@ interface NavProps {
 export default function Navbar({ handleClick }: NavProps): JSX.Element {
   return (
     <nav className="py-5 px-5 flex justify-between dark:text-white">
-      <h1 className="font-burtons text-2xl">RaiyanAhmed</h1>
+      <motion.h1
+        initial={{ x: -500, opacity: 0, scale: 0.5 }}
+        animate={{ x: 0, opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+        className="font-burtons text-2xl"
+      >
+        RaiyanAhmed
+      </motion.h1>
       <button className=" inline-flex p-3 hover:bg-green-600 rounded md:hidden text-white ml-auto hover:text-white outline-none">
         <svg
           className="w-6 h-6"
@@ -23,7 +31,12 @@ export default function Navbar({ handleClick }: NavProps): JSX.Element {
           />
         </svg>
       </button>
-      <ul className="hidden items-center md:flex">
+      <motion.ul
+        initial={{ x: 500, opacity: 0, scale: 0.5 }}
+        animate={{ x: 0, opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+        className="hidden items-center md:flex"
+      >
         <li>
           <BsMoonStarsFill onClick={handleClick} className="cursor-pointer" />
         </li>
@@ -59,7 +72,7 @@ export default function Navbar({ handleClick }: NavProps): JSX.Element {
             Resume
           </a>
         </li>
-      </ul>
+      </motion.ul>
     </nav>
   );
 }

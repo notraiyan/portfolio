@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import Head from "next/head";
 import Image from "next/image";
 import { AiFillLinkedin, AiFillGithub, AiFillFacebook } from "react-icons/ai";
 import { FaResearchgate } from "react-icons/fa";
@@ -22,7 +21,7 @@ const Home: NextPage = () => {
     <>
       <section>
         <div className="text-center p-10 py-10">
-          <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
+          <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 relative overflow-hidden mt-20 md:h-96 md:w-96">
             <Image src="/avatar.jpg" layout="fill" objectFit="cover" />
           </div>
           <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
@@ -32,8 +31,7 @@ const Home: NextPage = () => {
             Software Engineer
           </h3>
           <p className="text-md py-5 leading-8 max-w-xl mx-auto md:text-xl">
-            Freelancer providing services for programming and design content
-            needs. Join me down below and let&apos;s get cracking!
+            Join me down below and let&apos;s get the ball rolling!
           </p>
           <div className="text-5xl flex justify-center gap-16 py-3">
             <AiFillFacebook

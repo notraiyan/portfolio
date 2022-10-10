@@ -14,7 +14,7 @@ export default function Layout({ children }: LayoutProps): JSX.Element {
   return (
     <div className={`h-full w-full ${darkMode ? "dark" : "light"}`}>
       <Head>
-        <title>Raiyan Ahmed</title>
+        <title>Raiyan&apos;s Portfolio</title>
         <meta name="portfolio" content="Portfolio of Raiyan Ahmed" />
         <link rel="icon" href="/Logo.png" />
       </Head>
