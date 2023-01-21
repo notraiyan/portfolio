@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { useState } from "react";
+import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 interface LayoutProps {
@@ -20,6 +21,7 @@ export default function Layout({ children }: LayoutProps): JSX.Element {
       </Head>
       <Navbar handleClick={toggleDarkMode} />
       <main className=" px-5 md:px-10 lg:px-40">{children}</main>
+      {/* <Footer /> */}
     </div>
   );
 }

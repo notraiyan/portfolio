@@ -1,0 +1,76 @@
+{
+    "Project": [
+      { 
+        "title": "Violence detection", 
+        "description": "This repository contains the codes for our PAPER on violence detection titled Efficient Two-Stream Network for Violence Detection Using Separable Convolutional LSTM which is accepted to be presented at Int'l Joint Conference on Neural Networks (IJCNN) 2021.", 
+        "image": "/violence-detection.png", 
+        "link": "https://github.com/notraiyan/TwoStreamSepConvLSTM_ViolenceDetection", 
+        "github": "https://github.com/notraiyan/TwoStreamSepConvLSTM_ViolenceDetection", 
+        "tags": [ "Python", "Tensorflow", "Keras", "OpenCV", "Numpy", "Pandas", "Matplotlib", "Scikit-learn", "Scipy", "Jupyter Notebook" ]
+    },
+    { 
+        "title": "Cat and dog detection", 
+        "description": "Deep Neural Network for image classification. The comparison shows that 4-layer neural network has better performance (80%) than your 2-layer neural network (72%) on the same test set.", 
+        "image": "/dog-cat.webp", 
+        "link": "https://github.com/notraiyan/cat_dog_detect", 
+        "github": "https://github.com/notraiyan/cat_dog_detect", 
+        "tags": [ "Python", "Numpy", "Pandas", "Matplotlib", "Scikit-learn", "Scipy", "Jupyter Notebook" ] 
+    },
+    { 
+        "title": "SwiftEats", 
+        "description": "CNN and sepConvLstm are used to extract features that are passed to the classifier and Achieved 89.75 percent accuracy", 
+        "image": "/swifteats.png", 
+        "link": "https://swift-eats.vercel.app/home", 
+        "github": "https://github.com/notraiyan/SwiftEats", 
+        "tags": [ "React Js", "HTML", "CSS", "Redux"]
+    },
+    { 
+        "title": "ManagetIt", 
+        "description": "It is a web application that allows users to manage their inventory and keep track of their products. To login use email: test@gmail.com & password: test", 
+        "image": "/manageit.png", 
+        "link": "http://manageit.rf.gd/login", 
+        "github": "https://github.com/notraiyan/ManageIt", 
+        "tags": [ "Laravel", "PHP", "CSS", "HTML", "Bootstrap", "MySQL", "JavaScript", "AJAX", "JSON", "REST API" ]
+    },
+    { 
+        "title": "Simple Messenger", 
+        "description": "A simple messenger app that allows users to send messages to each other.", 
+        "image": "/messenger.png", 
+        "link": "https://github.com/notraiyan/SimpleMessenger", 
+        "github": "https://github.com/notraiyan/SimpleMessenger", 
+        "tags": ["React Js", "HTML", "CSS", "WebSocket"]
+    },
+    { 
+        "title": "Virtual Classroom", 
+        "description": "A virtual classroom app that allows users to create and join virtual classrooms.", 
+        "image": "/class.jpg", 
+        "link": "https://github.com/notraiyan/virtualclassroom", 
+        "github": "https://github.com/notraiyan/virtualclassroom", 
+        "tags": [ "Java", "Java Swing", "MySQL" ]
+    },
+    { 
+        "title": "Phonebook", 
+        "description": "A phonebook app that allows users to add, edit, delete and search contacts.",
+        "image": "/phonebook.png", 
+        "link": "https://github.com/notraiyan/phonebook", 
+        "github": "https://github.com/notraiyan/phonebook", 
+        "tags": [ "C", "Link-List" ] 
+    },
+    { 
+        "title": "Battleship", 
+        "description": "Battleship is a simple console based c++ plus game. You will provide battleship the co-ordinates either horizontal or vertical and x-y coordinates 0-9 for the position to attack the enemy ship.", 
+        "image": "/battleship.png", 
+        "link": "https://github.com/notraiyan/battleship", 
+        "github": "https://github.com/notraiyan/battleship", 
+        "tags": [ "C++", "OOP", "Link-List" ]
+    },
+    { 
+        "title": "Blood Donation", 
+        "description": "CNN and sepConvLstm are used to extract features that are passed to the classifier and Achieved 89.75 percent accuracy", 
+        "image": "/blood.png", 
+        "link": "https://github.com/notraiyan/BloodDonation", 
+        "github": "https://github.com/notraiyan/BloodDonation", 
+        "tags": [ "React Js", "HTML", "CSS" ]
+    }
+    ]
+}

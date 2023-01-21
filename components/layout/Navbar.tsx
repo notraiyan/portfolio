@@ -1,10 +1,14 @@
+import { openInNewTab } from "@utils/utils";
 import { motion } from "framer-motion";
+import { useRouter } from "next/router";
 import { BsMoonStarsFill } from "react-icons/bs";
 
 interface NavProps {
   handleClick: () => void;
 }
 export default function Navbar({ handleClick }: NavProps): JSX.Element {
+  const router = useRouter();
+  const path = router.asPath;
   return (
     <nav className="py-5 px-5 flex justify-between dark:text-white">
       <motion.h1
@@ -13,7 +17,9 @@ export default function Navbar({ handleClick }: NavProps): JSX.Element {
         transition={{ duration: 1 }}
         className="font-burtons text-2xl"
       >
-        RaiyanAhmed
+        <a className="px-4 py-2 ml-2" href="/">
+          RaiyanAhmed
+        </a>
       </motion.h1>
       <button className=" inline-flex p-3 hover:bg-green-600 rounded md:hidden text-white ml-auto hover:text-white outline-none">
         <svg
@@ -42,8 +48,10 @@ export default function Navbar({ handleClick }: NavProps): JSX.Element {
         </li>
         <li>
           <a
-            className="px-4 py-2 ml-8 hover:underline hover:underline-offset-8"
-            href="#"
+            className={`px-4 py-2 ml-8 ${
+              path.includes("projects") ? "underline underline-offset-8" : ""
+            } hover:underline hover:underline-offset-8`}
+            href="/projects"
           >
             Projects
           </a>
@@ -66,8 +74,8 @@ export default function Navbar({ handleClick }: NavProps): JSX.Element {
         </li>
         <li>
           <a
-            className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8 hover:py-3"
-            href="#"
+            className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8 hover:py-3 hover:cursor-pointer"
+            onClick={() => openInNewTab("/RaiyanAhmedResume.pdf")}
           >
             Resume
           </a>
