@@ -76,12 +76,17 @@
 
     "Publication": [
         { 
-            "title": "Violence detection", 
-            "description": "This repository contains the codes for our PAPER on violence detection titled Efficient Two-Stream Network for Violence Detection Using Separable Convolutional LSTM which is accepted to be presented at Int'l Joint Conference on Neural Networks (IJCNN) 2021.", 
+            "title": "Efficient Two-Stream Network for Violence Detection Using Separable Convolutional LSTM",
+            "authors": ["Zahidul Islam", "Md Rukonuzzaman", "Raiyan Ahmed", "Md Hasanul Kabir", "Moshiur Farazi" ],
+            "description": "Automatically detecting violence from surveillance footage is a subset of activity recognition that deserves special attention because of its wide applicability in unmanned security monitoring systems, internet video filtration, etc. In this work, we propose an efficient two-stream deep learning architecture leveraging Separable Convolutional LSTM (SepConvLSTM) and pre-trained MobileNet where one stream takes in background suppressed frames as inputs and the other stream processes differences of adjacent frames. We employed simple and fast input pre-processing techniques that highlight the moving objects in the frames by suppressing non-moving backgrounds and capturing the motion in-between frames. As violent actions are mostly characterized by body movements these inputs help produce discriminative features. SepConvLSTM is constructed by replacing convolution operation at each gate of ConvLSTM with a depthwise separable convolution that enables producing robust long-range Spatio-temporal features while using substantially fewer parameters. We experimented with three fusion methods to combine the output feature maps of the two streams. Evaluation of the proposed methods was done on three standard public datasets. Our model outperforms the accuracy on the larger and more challenging RWF-2000 dataset by more than a 2% margin while matching state-of-the-art results on the smaller datasets. Our experiments lead us to conclude, the proposed models are superior in terms of both computational efficiency and detection accuracy.", 
             "image": "/violence-detection.png", 
-            "link": "https://github.com/notraiyan/TwoStreamSepConvLSTM_ViolenceDetection", 
-            "github": "https://github.com/notraiyan/TwoStreamSepConvLSTM_ViolenceDetection", 
-            "tags": [ "Python", "Tensorflow", "Keras", "OpenCV", "Numpy", "Pandas", "Matplotlib", "Scikit-learn", "Scipy", "Jupyter Notebook" ]
+            "link": "http://dx.doi.org/10.1109/IJCNN52387.2021.9534280", 
+            "pdf": "/Thesis-Paper.pdf", 
+            "tags": [ "Python", "Tensorflow", "Keras", "OpenCV", "Numpy", "Pandas", "Matplotlib", "Scikit-learn", "Scipy", "Jupyter Notebook" ],
+            "conference": "International Joint Conference on Neural Networks (IJCNN)",
+            "doi": "10.1109/IJCNN52387.2021.9534280",
+            "publishedIn": "July 2021",
+            "citation": "16"
         }
     ]
 }
