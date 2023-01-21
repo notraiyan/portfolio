@@ -58,16 +58,22 @@ export default function Navbar({ handleClick }: NavProps): JSX.Element {
         </li>
         <li>
           <a
-            className="px-4 py-2 ml-8 hover:underline hover:underline-offset-8"
-            href="#"
+            className={`px-4 py-2 ml-8 ${
+              path.includes("experience") ? "underline underline-offset-8" : ""
+            } hover:underline hover:underline-offset-8`}
+            href="/experience"
           >
             Experience
           </a>
         </li>
         <li>
           <a
-            className="px-4 py-2 ml-8 hover:underline hover:underline-offset-8"
-            href="#"
+            className={`px-4 py-2 ml-8 ${
+              path.includes("publications")
+                ? "underline underline-offset-8"
+                : ""
+            } hover:underline hover:underline-offset-8`}
+            href="/publications"
           >
             Publications
           </a>
