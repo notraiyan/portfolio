@@ -27,7 +27,7 @@ const Experience: NextPage = () => {
           transition={{ duration: 0.7 }}
           className="width-full rounded overflow-hidden shadow-lg bg-gradient-to-r from-slate-500 text- to-slate-200 text-black"
         >
-          <div className="widht-full h-56 relative">
+          <div className="widht-full h-32 relative">
             <Image
               layout="fill"
               objectFit="contain"
@@ -66,7 +66,7 @@ const Experience: NextPage = () => {
                 className="bg-gradient-to-r from-cyan-700 text- to-cyan-500 max-w-sm rounded overflow-hidden shadow-lg mb-5"
                 key={project?.title}
               >
-                <div className="widht-full h-30 relative bg-black">
+                <div className="widht-full h-64 relative bg-black">
                   <Image
                     layout="fill"
                     objectFit="contain"
@@ -112,7 +112,7 @@ const Experience: NextPage = () => {
           transition={{ duration: 0.7 }}
           className="width-full rounded overflow-hidden shadow-lg mb-5 bg-gradient-to-r from-slate-500 text- to-slate-200 text-black"
         >
-          <div className="widht-full h-32 relative">
+          <div className="mx-auto w-64 h-32 relative">
             <Image
               layout="fill"
               objectFit="contain"
