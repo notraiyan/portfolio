@@ -12,6 +12,7 @@ import web4 from "../public/web1.png";
 import { openInNewTab } from "@utils/utils";
 import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
+import { MdOpenInNew } from "react-icons/md";
 
 const Home: NextPage = () => {
   return (
@@ -94,7 +95,15 @@ const Home: NextPage = () => {
               <div className="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:bg-gray-700">
                 <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-cyan-400">
                   <h3 className="text-xl font-bold tracking-wide">
-                    Islamic University of Technology
+                    <a
+                      className="hover:underline hover:underline-offset-4 cursor-pointer"
+                      onClick={() =>
+                        openInNewTab("https://www.iutoic-dhaka.edu/")
+                      }
+                    >
+                      Islamic University of Technology
+                      <MdOpenInNew className="inline-block ml-2" />
+                    </a>
                   </h3>
                   <h3 className="text-lg italic tracking-wide">
                     Bachelor of Science in Computer Science & Engineering
@@ -110,7 +119,15 @@ const Home: NextPage = () => {
                 </div>
                 <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-cyan-400">
                   <h3 className="text-xl font-semibold tracking-wide">
-                    St Joseph Higher Secondary School & College
+                    <a
+                      className="hover:underline hover:underline-offset-4 cursor-pointer"
+                      onClick={() =>
+                        openInNewTab("https://sjs.edu.bd/new/index.php")
+                      }
+                    >
+                      St Joseph Higher Secondary School & College
+                      <MdOpenInNew className="inline-block ml-2" />
+                    </a>
                   </h3>
                   <h3 className="text-lg italic tracking-wide">
                     Higher Secondary School Certificate
@@ -122,7 +139,15 @@ const Home: NextPage = () => {
                 </div>
                 <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-cyan-400">
                   <h3 className="text-xl font-semibold tracking-wide">
-                    St Joseph Higher Secondary School & College
+                    <a
+                      className="hover:underline hover:underline-offset-4 cursor-pointer"
+                      onClick={() =>
+                        openInNewTab("https://sjs.edu.bd/new/index.php")
+                      }
+                    >
+                      St Joseph Higher Secondary School & College
+                      <MdOpenInNew className="inline-block ml-2" />
+                    </a>
                   </h3>
                   <h3 className="text-lg italic tracking-wide">
                     Secondary School Certificate

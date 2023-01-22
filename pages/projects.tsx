@@ -5,7 +5,7 @@ import Data from "../public/data.json";
 import Typewriter from "typewriter-effect";
 import { openInNewTab } from "@utils/utils";
 import { MdOpenInNew } from "react-icons/md";
-import { FaGithubSquare, FaGitSquare } from "react-icons/fa";
+import { FaGitSquare } from "react-icons/fa";
 
 const Projects: NextPage = () => {
   console.log(Data.Project[0].title);
