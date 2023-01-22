@@ -3,6 +3,9 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import Data from "../public/data.json";
 import Typewriter from "typewriter-effect";
+import { openInNewTab } from "@utils/utils";
+import { MdOpenInNew } from "react-icons/md";
+import { FaGithubSquare, FaGitSquare } from "react-icons/fa";
 
 const Projects: NextPage = () => {
   console.log(Data.Project[0].title);
@@ -36,8 +39,23 @@ const Projects: NextPage = () => {
               />
             </div>
             <div className="px-6 py-4">
-              <div className="font-bold text-xl text-white mb-2">
-                {project.title}
+              <div className="flex font-bold text-xl text-white mb-2">
+                <a
+                  className="flex-auto hover:underline hover:underline-offset-4 cursor-pointer mr-2"
+                  onClick={() => openInNewTab(project?.link)}
+                >
+                  {project.title}
+                  <MdOpenInNew className="inline-block ml-2" />
+                </a>
+                <a
+                  className="flex-auto cursor-pointer"
+                  onClick={() => openInNewTab(project?.github)}
+                >
+                  <FaGitSquare
+                    className="inline-block ml-2 float-right text-3xl transform 
+                                transition duration-500 hover:scale-110"
+                  />
+                </a>
               </div>
               <p className="text-gray-300 text-base">{project?.description}</p>
             </div>

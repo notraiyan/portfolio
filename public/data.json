@@ -88,5 +88,35 @@
             "publishedIn": "July 2021",
             "citation": "16"
         }
+    ],
+    "Experience": [
+        { 
+            "title": "Protrain", 
+            "description": "This is a health training platform where professionals charge you for guiding your exercises. This is aimed to be a substitute for physical gyms. I have actively worked in building the front end and the back end. This was the longest client project that I had been involved with", 
+            "image": "/protrain.png", 
+            "link": "http://3.225.172.203/", 
+            "tags": [ "NextJs", "Cypress", "Jest", "Github", "Jira", "Vercel" ]
+        },
+        { 
+            "title": "Broadcast", 
+            "description": "This helps our client to view and approve the time logs in Harvest. I have actively worked on building cron jobs and different APIs.", 
+            "image": "/broadcast.png", 
+            "link": "https://broadcast.lastcallmedia.com/", 
+            "tags": [ "NextJs", "Cypress", "Jest", "Github", "Jira", "Vercel", "Harvest" ]
+        },
+        { 
+            "title": "CubeBurst", 
+            "description": "This website can host any NextJs website through them. I have actively worked on building the front end and back end.", 
+            "image": "/cubeburst.png", 
+            "link": "http://cubeburst.io/", 
+            "tags": [ "NextJs", "Cypress", "Jest", "Github", "Jira", "Vercel-Build", "AWS" ]
+        },
+        { 
+            "title": "Seramount", 
+            "description": "This website was built for the client to promote their organization. I have actively worked on updating the ui according to the client.", 
+            "image": "/seramount.png", 
+            "link": "https://seramount.com/", 
+            "tags": [ "Wordpress", "Lando", "PHP", "Github", "Jira" ]
+        }
     ]
 }

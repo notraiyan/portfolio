@@ -6,7 +6,7 @@ import Typewriter from "typewriter-effect";
 import { openInNewTab } from "@utils/utils";
 import { MdOpenInNew } from "react-icons/md";
 
-const Projects: NextPage = () => {
+const Publications: NextPage = () => {
   return (
     <>
       <h2 className="text-5xl py-2 text-cyan-600 font-medium dark:text-cyan-400 md:text-6xl text-center mt-10">
@@ -94,4 +94,4 @@ const Projects: NextPage = () => {
   );
 };
 
-export default Projects;
+export default Publications;

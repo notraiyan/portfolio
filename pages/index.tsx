@@ -24,7 +24,7 @@ const Home: NextPage = () => {
         transition={{ duration: 0.7 }}
       >
         <div className="text-center p-10 py-10">
-          <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 relative overflow-hidden mt-20 md:h-96 md:w-96">
+          <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-48 h-48 relative overflow-hidden mt-20 md:h-96 md:w-96">
             <Image src="/avatar.jpg" layout="fill" objectFit="cover" />
           </div>
           <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
@@ -39,17 +39,20 @@ const Home: NextPage = () => {
           <div className="text-5xl flex justify-center gap-16 py-3">
             <AiFillFacebook
               onClick={() => openInNewTab("https://www.facebook.com/R41Y4N/")}
-              className="cursor-pointer"
+              className="cursor-pointer transform 
+              transition duration-500 hover:scale-110"
             />
             <AiFillLinkedin
               onClick={() =>
                 openInNewTab("https://www.linkedin.com/in/raiyan-ahmed/")
               }
-              className="cursor-pointer"
+              className="cursor-pointer transform 
+              transition duration-500 hover:scale-110"
             />
             <AiFillGithub
               onClick={() => openInNewTab("https://github.com/notraiyan")}
-              className="cursor-pointer"
+              className="cursor-pointer transform 
+              transition duration-500 hover:scale-110"
             />
             <FaResearchgate
               onClick={() =>
@@ -57,7 +60,8 @@ const Home: NextPage = () => {
                   "https://www.researchgate.net/profile/Raiyan-Ahmed-2"
                 )
               }
-              className="cursor-pointer"
+              className="cursor-pointer transform 
+              transition duration-500 hover:scale-110"
             />
           </div>
         </div>

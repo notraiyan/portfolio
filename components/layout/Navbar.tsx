@@ -10,8 +10,9 @@ export default function Navbar({ handleClick }: NavProps): JSX.Element {
   const router = useRouter();
   const path = router.asPath;
   return (
-    <nav className="py-5 px-5 flex justify-between dark:text-white">
+    <nav className="sticky top-0 z-30 bg-inherit py-5 px-5 flex justify-between dark:text-white">
       <motion.h1
+        whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
         initial={{ x: -500, opacity: 0, scale: 0.5 }}
         animate={{ x: 0, opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
@@ -21,7 +22,7 @@ export default function Navbar({ handleClick }: NavProps): JSX.Element {
           RaiyanAhmed
         </a>
       </motion.h1>
-      <button className=" inline-flex p-3 hover:bg-green-600 rounded md:hidden text-white ml-auto hover:text-white outline-none">
+      <button className=" inline-flex p-3 rounded md:hidden ml-auto outline-none">
         <svg
           className="w-6 h-6"
           fill="none"
