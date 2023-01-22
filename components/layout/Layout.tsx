@@ -1,5 +1,6 @@
+import ScrollToTop from "@components/ScrollToTop";
 import Head from "next/head";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
@@ -9,8 +10,14 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps): JSX.Element {
   const [darkMode, setDarkMode] = useState<boolean>(true);
+  useEffect(() => {
+    // Perform localStorage action
+    const item = localStorage.getItem("darkMode");
+    setDarkMode(item === "true");
+  }, []);
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
+    localStorage.setItem("darkMode", JSON.stringify(!darkMode));
   };
   return (
     <div className={`h-full w-full ${darkMode ? "dark" : "light"}`}>
@@ -22,6 +29,7 @@ export default function Layout({ children }: LayoutProps): JSX.Element {
       <Navbar handleClick={toggleDarkMode} />
       <main className=" px-5 md:px-10 lg:px-40">{children}</main>
       {/* <Footer /> */}
+      <ScrollToTop />
     </div>
   );
 }

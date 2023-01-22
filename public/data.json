@@ -71,6 +71,14 @@
             "link": "https://github.com/notraiyan/BloodDonation", 
             "github": "https://github.com/notraiyan/BloodDonation", 
             "tags": [ "React Js", "HTML", "CSS" ]
+        },
+        { 
+            "title": "Simple Tic-Tac-Toe", 
+            "description": "A game in which two players alternately put Xs and Os in compartments of a figure formed by two vertical lines crossing two horizontal lines and each tries to get a row of three Xs or three Os before the opponent does. Often we have nothing to do. Now we can play tic-tac-toe on a website with a friend without any need of pen and paper.", 
+            "image": "/tictactoe.png", 
+            "link": "http://manageit.rf.gd/tic-tac-toe/dist/index.html", 
+            "github": "http://manageit.rf.gd/tic-tac-toe/dist/index.html", 
+            "tags": [ "React Js", "HTML", "CSS" ]
         }
     ],
 
@@ -94,7 +102,7 @@
             "title": "Protrain", 
             "description": "This is a health training platform where professionals charge you for guiding your exercises. This is aimed to be a substitute for physical gyms. I have actively worked in building the front end and the back end. This was the longest client project that I had been involved with", 
             "image": "/protrain.png", 
-            "link": "http://3.225.172.203/", 
+            "link": "https://demo.protrain.fitness/", 
             "tags": [ "NextJs", "Cypress", "Jest", "Github", "Jira", "Vercel" ]
         },
         { 
