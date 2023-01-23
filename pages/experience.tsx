@@ -50,10 +50,9 @@ const Experience: NextPage = () => {
               July 2021 - Present
             </div>
             <p className="mt-10 text-justify max-w-md mx-auto">
-              Talentedcube was the name of the Bangladeshi remote team that I
-              was a member of. I was responsible for contributing to the
-              projects of Last Call Media and the TalentedCube initiatives. I
-              had the opportunity to work on some of their client projects.
+              As an independent contractor, my primary task was to contribute to
+              projects of Last Call Media and TalentedCube&apos;s initiatives. I
+              was able to contribute in some of their client projects.
             </p>
           </div>
           <div className="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-5 mt-20 mx-auto">
@@ -137,10 +136,10 @@ const Experience: NextPage = () => {
               November 2019 - December 2019
             </div>
             <p className="mt-10 text-justify max-w-md mx-auto">
-              During this 2 months internship, I have been assigned to work
-              under a supervisor. My prime roles were to get familiar with Asp
-              .Net framework and test their applications. Finally, I had to come
-              up with a proposed solution for a problem.
+              During the 2 months internship, I have been assigned to work under
+              a supervisor. My prime roles were to get familiar with Asp.Net
+              framework and test their applications. Finally, I had to come up
+              with a proposed solution for a problem.
             </p>
           </div>
           <div className="px-6 pt-4 pb-2"></div>

@@ -77,12 +77,14 @@ const Home: NextPage = () => {
               <div className="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:bg-cyan-400">
                 <h3 className="text-3xl font-semibold">Background</h3>
                 <span className="text-sm text-justify tracking-wider">
-                  I have studied computer science & engineering at the Islamic
-                  University of Technology. My thesis was on the development of
-                  a prototype-based detection system that employs Machine
-                  Learning algorithms to recognize violence in video data. I
-                  have worked for Last Call Media for almost two years as a
-                  Software Engineer.
+                  A graduate in Computer Science and Engineering from the
+                  Islamic University of Technology with a thesis on the
+                  development of a prototype-based detection system using
+                  Machine Learning algorithms for recognizing violence in video
+                  footage. Experienced software engineer with almost two years
+                  of work experience at Last Call Media (TalentedCube). Seeking
+                  to pursue higher studies and research experience in the field
+                  of computer science and technology.
                 </span>
               </div>
             </motion.div>
