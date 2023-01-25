@@ -28,7 +28,7 @@ export default function Navbar({ handleClick }: NavProps): JSX.Element {
         </a>
       </motion.h1>
       <button
-        className=" inline-flex p-3 rounded md:hidden ml-auto outline-none"
+        className=" inline-flex pl-3 pr-3 pb-3 rounded md:hidden ml-auto outline-none"
         onClick={() => toggleMenu()}
       >
         <svg
