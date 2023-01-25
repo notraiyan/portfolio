@@ -1,12 +1,17 @@
 import { openInNewTab } from "@utils/utils";
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
+import { useState } from "react";
 import { BsMoonStarsFill } from "react-icons/bs";
 
 interface NavProps {
   handleClick: () => void;
 }
 export default function Navbar({ handleClick }: NavProps): JSX.Element {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
   const router = useRouter();
   const path = router.asPath;
   return (
@@ -22,7 +27,10 @@ export default function Navbar({ handleClick }: NavProps): JSX.Element {
           RaiyanAhmed
         </a>
       </motion.h1>
-      <button className=" inline-flex p-3 rounded md:hidden ml-auto outline-none">
+      <button
+        className=" inline-flex p-3 rounded md:hidden ml-auto outline-none"
+        onClick={() => toggleMenu()}
+      >
         <svg
           className="w-6 h-6"
           fill="none"
@@ -38,6 +46,27 @@ export default function Navbar({ handleClick }: NavProps): JSX.Element {
           />
         </svg>
       </button>
+      <div
+        className={`${
+          isOpen ? "block" : "hidden"
+        } absolute top-20 right-0 bg-inherit min-w-screen md:hidden flex flex-col items-center justify-center space-x-4 space-y-4 z-20 shadow-lg rounded-sm`}
+      >
+        <a href="/projects" className="text-2xl block p-4">
+          Projects
+        </a>
+        <a href="/experience" className="text-2xl block p-4">
+          Experience
+        </a>
+        <a href="/publications" className="text-2xl block p-4">
+          Publications
+        </a>
+        <a
+          onClick={() => openInNewTab("/RaiyanAhmedResume.pdf")}
+          className="text-2xl block p-4"
+        >
+          Resume
+        </a>
+      </div>
       <motion.ul
         initial={{ x: 500, opacity: 0, scale: 0.5 }}
         animate={{ x: 0, opacity: 1, scale: 1 }}
