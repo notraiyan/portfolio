@@ -4,7 +4,7 @@ import Typewriter from "typewriter-effect";
 
 export default function Home() {
   const [question, setQuestion] = useState("");
-  const [result, setResult] = useState();
+  const [result, setResult] = useState("");
   const [loading, setLoading] = useState(false);
 
   async function onSubmit(event: { preventDefault: () => void }) {
@@ -21,12 +21,11 @@ export default function Home() {
 
       const data = await response.json();
       if (response.status !== 200) {
-        throw (
-          data.error ||
-          new Error(`Request failed with status ${response.status}`)
-        );
+        setResult("too much load, try again later");
       }
-      setResult(data.result);
+      if (response.status === 200) {
+        setResult(data.result);
+      }
       setQuestion("");
     } catch (error) {
       // Consider implementing your own error handling logic here

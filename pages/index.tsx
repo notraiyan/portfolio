@@ -291,6 +291,14 @@ const Home: NextPage = () => {
             />
           </motion.div>
         </div>
+        <div className="flex justify-center">
+          <a
+            className="p-20 width-full text-center bg-gradient-to-r from-cyan-500 text- to-teal-500 text-xl text-white px-4 py-2 border-none rounded-md ml-8 hover:scale-110 cursor-pointer"
+            href="/chatgpt"
+          >
+            Talk with AI
+          </a>
+        </div>
       </motion.section>
     </>
   );
