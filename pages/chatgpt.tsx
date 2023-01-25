@@ -67,10 +67,10 @@ export default function Home() {
             placeholder="Enter your message here"
             value={question}
             onChange={(e) => setQuestion(e.target.value)}
-            className="text-black px-4 py-2 border-none rounded-md"
+            className="text-black px-4 py-2 border-none rounded-md max-w-2xl w-full"
           />
           <input
-            className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8 cursor-pointer disabled:cursor-default"
+            className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8 cursor-pointer disabled:cursor-default sm:mt-5"
             type="submit"
             value="Generate answer"
             disabled={loading}
