@@ -20,7 +20,7 @@ export default function Layout({ children }: LayoutProps): JSX.Element {
     localStorage.setItem("darkMode", JSON.stringify(!darkMode));
   };
   return (
-    <div className={`h-full w-full ${darkMode ? "dark" : "light"}`}>
+    <div className={`min-h-screen w-full ${darkMode ? "dark" : "light"}`}>
       <Head>
         <title>Raiyan&apos;s Portfolio</title>
         <meta name="portfolio" content="Portfolio of Raiyan Ahmed" />
