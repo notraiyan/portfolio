@@ -1,10 +1,17 @@
 import Head from "next/head";
 import { useState } from "react";
+import { FaRobot, FaUserTie } from "react-icons/fa";
 import Typewriter from "typewriter-effect";
+
+interface conversationProps {
+  message: string;
+  type: string;
+}
 
 export default function Home() {
   const [question, setQuestion] = useState("");
   const [result, setResult] = useState("");
+  const [conversation, setConversation] = useState<conversationProps[]>([]);
   const [loading, setLoading] = useState(false);
 
   async function onSubmit(event: { preventDefault: () => void }) {
@@ -22,9 +29,21 @@ export default function Home() {
       const data = await response.json();
       if (response.status !== 200) {
         setResult("too much load, try again later");
+        setConversation([
+          ...conversation,
+          { message: question, type: "user" },
+          { message: "too much load, try again later", type: "bot" },
+        ]);
+        setQuestion("");
       }
       if (response.status === 200) {
         setResult(data.result);
+        setConversation([
+          ...conversation,
+          { message: question, type: "user" },
+          { message: data.result, type: "bot" },
+        ]);
+        setQuestion("");
       }
       setQuestion("");
     } catch (error) {
@@ -56,9 +75,9 @@ export default function Home() {
           }}
         />
       </h2>
-      <div className="p-10 gap-5 mt-20 width-full">
+      <div className="p-10 gap-5 mt-20 width-full shadow-lg">
         <form
-          className="width-full h-40 text-center rounded overflow-hidden shadow-lg"
+          className="width-full h-40 text-center rounded overflow-hidden"
           onSubmit={onSubmit}
         >
           <input
@@ -76,8 +95,24 @@ export default function Home() {
             disabled={loading}
           />
         </form>
-        <div className="p-20 bg-gradient-to-r from-slate-300 text- to-slate-500 text-black width-full rounded overflow-hidden shadow-lg">
-          {result}
+        <div className="p-20 text-black width-full rounded overflow-hidden shadow-lg">
+          {conversation.map((chat, index) => (
+            <div
+              key={index}
+              className={`${
+                chat.type === "user" ? "bg-gray-200" : "bg-blue-200"
+              } p-2 first:rounded-t-lg last:rounded-b-lg flex`}
+            >
+              <span className="mr-5">
+                {chat.type === "user" ? (
+                  <FaUserTie size={24} />
+                ) : (
+                  <FaRobot size={24} />
+                )}
+              </span>
+              <span>{chat.message}</span>
+            </div>
+          ))}
         </div>
       </div>
     </>
