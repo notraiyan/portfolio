@@ -11,7 +11,6 @@ interface conversationProps {
 
 export default function Home() {
   const [question, setQuestion] = useState("");
-  const [result, setResult] = useState("");
   const [conversation, setConversation] = useState<conversationProps[]>([]);
   const [loading, setLoading] = useState(false);
 
@@ -29,20 +28,18 @@ export default function Home() {
 
       const data = await response.json();
       if (response.status !== 200) {
-        setResult("too much load, try again later");
         setConversation([
-          ...conversation,
           { message: question, type: "user" },
           { message: "too much load, try again later", type: "bot" },
+          ...conversation,
         ]);
         setQuestion("");
       }
       if (response.status === 200) {
-        setResult(data.result);
         setConversation([
-          ...conversation,
           { message: question, type: "user" },
           { message: data.result, type: "bot" },
+          ...conversation,
         ]);
         setQuestion("");
       }
