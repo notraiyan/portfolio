@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useState } from "react";
 import { FaRobot, FaUserTie } from "react-icons/fa";
 import Typewriter from "typewriter-effect";
+import ReactHtmlParser from "react-html-parser";
 
 interface conversationProps {
   message: string;
@@ -110,7 +111,9 @@ export default function Home() {
                   <FaRobot size={24} />
                 )}
               </span>
-              <span>{chat.message}</span>
+              <span>
+                <text>{ReactHtmlParser(chat.message)}</text>
+              </span>
             </div>
           ))}
         </div>

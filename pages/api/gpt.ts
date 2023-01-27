@@ -37,8 +37,10 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       temperature: 0.6,
       max_tokens: 4097 - size,
     });
-    console.log(completion.data.choices);
-    res.status(200).json({ result: completion.data.choices[0].text });
+    let result = completion.data.choices[0].text?.replace("\n\n", "");
+    result = result?.replace(/(\r\n|\r|\n)/g, "<br />");
+    console.log(result);
+    res.status(200).json({ result: result });
   } catch (error) {
     // Consider adjusting the error handling logic for your use case
     res.status(500).json({
