@@ -33,7 +33,7 @@ const Home: NextPage = () => {
           <p className="text-md py-5 leading-8 max-w-xl mx-auto md:text-xl">
             Join me down below and let&apos;s get the ball rolling!
           </p>
-          <div className="text-5xl flex justify-center gap-16 py-3">
+          <div className="text-5xl flex justify-center gap-5 sm:gap-16 py-3">
             <AiFillFacebook
               onClick={() => openInNewTab("https://www.facebook.com/R41Y4N/")}
               className="cursor-pointer transform 
