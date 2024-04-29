@@ -27,11 +27,11 @@ const Experience: NextPage = () => {
           transition={{ duration: 0.7 }}
           className="width-full rounded overflow-hidden shadow-lg bg-gradient-to-r from-slate-500 text- to-slate-200 text-black"
         >
-          <div className="widht-full h-32 relative">
+          <div className="widht-full h-32 relative mt-5">
             <Image
               layout="fill"
               objectFit="contain"
-              src="/talentedcube.png"
+              src="/lcm.svg"
               alt="Mountain"
             />
           </div>
@@ -41,7 +41,7 @@ const Experience: NextPage = () => {
                 className="hover:underline hover:underline-offset-4 cursor-pointer"
                 onClick={() => openInNewTab("https://lastcallmedia.com/")}
               >
-                Last Call Media (Talentedcube)
+                Last Call Media
                 <MdOpenInNew className="inline-block ml-2" />
               </a>
             </div>
@@ -50,9 +50,11 @@ const Experience: NextPage = () => {
               July 2021 - Present
             </div>
             <p className="mt-10 text-justify max-w-md mx-auto">
-              As an independent contractor, my primary task was to contribute to
-              projects of Last Call Media and TalentedCube&apos;s initiatives. I
-              was able to contribute in some of their client projects.
+              My Primary responsibilities include developing and maintaining web
+              applications for clients. I have been fortunate enough to work
+              with top notch fellow developers. I have acquired a diversified
+              set of expertise while working with React, Next JS, AWS, Cypress,
+              Wordpress, CI/CD, etc.
             </p>
           </div>
           <div className="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-5 mt-20 mx-auto">
